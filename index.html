@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+
+<body style="font-family: 'Poppins', sans-serif; background-color: #f8f8f8; margin: 0; padding: 0;">
+
+    <header style="background-color: #2B67C7; color: #fff; text-align: center; padding: 1em;">
+        <h1 style="font-size: 2.5em; font-weight: 600; margin-bottom: 0.5em;">Achievements Gallery</h1>
+    </header>
+
+    <main
+        style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <section class="filter-section">
+            <label for="certificateFilter">Filter Certificates:</label>
+            <select id="certificateFilter">
+                <option value="all">All Certificates</option>
+                <option value="academic1">1st year</option>
+                <option value="academic2">2nd year</option>
+                <option value="academic3">3rd year</option>
+                <option value="academic4">4th year</option>
+            </select>
+        </section>
+
+        <section class="year-section collapsed" id="year-2021-2022">
+            <h2 class="year-heading" onclick="toggleYear('year-2021-2022', 'expandBtn1')">Won in First Year <i
+                    class="fas fa-caret-down" id="expandBtn1"></i></h2>
+            <p>Explore certificates earned during this academic year.</p>
+            <div class="certificate" data-type="academic1">
+                <!-- Certificates for the first year -->
+                <div class="certificate" data-type="academic1">
+                    <a href="certificate1.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 1">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 1 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="certificate" data-type="academic1">
+                    <a href="certificate2.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 2">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 2 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="year-section collapsed" id="year-2020-2021">
+            <h2 class="year-heading" onclick="toggleYear('year-2020-2021', 'expandBtn2')">Won in Second Year <i
+                    class="fas fa-caret-down" id="expandBtn2"></i></h2>
+            <p>Discover certificates earned during this academic year.</p>
+            <div class="certificate" data-type="academic2">
+                <!-- Certificates for the second year -->
+                <div class="certificate" data-type="academic2">
+                    <a href="certificate3.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 3">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 1 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="certificate" data-type="academic2">
+                    <a href="certificate4.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 4">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 2 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="year-section collapsed" id="year-2019-2020">
+            <h2 class="year-heading" onclick="toggleYear('year-2019-2020', 'expandBtn3')">Won in Third Year <i
+                    class="fas fa-caret-down" id="expandBtn3"></i></h2>
+            <p>Explore certificates earned during this academic year.</p>
+            <div class="certificate" data-type="academic3">
+                <!-- Certificates for the third year -->
+                <div class="certificate" data-type="academic3">
+                    <a href="certificate5.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 5">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 3 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="certificate" data-type="academic3">
+                    <a href="certificate6.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 6">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 4 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="year-section collapsed" id="year-2018-2019">
+            <h2 class="year-heading" onclick="toggleYear('year-2018-2019', 'expandBtn4')">Won in Fourth Year <i
+                    class="fas fa-caret-down" id="expandBtn4"></i></h2>
+            <p>Explore certificates earned during this academic year.</p>
+            <div class="certificate" data-type="academic4">
+                <!-- Certificates for the fourth year -->
+                <div class="certificate" data-type="academic4">
+                    <a href="certificate7.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 7">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 5 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="certificate" data-type="academic4">
+                    <a href="certificate8.jpg" data-lightbox="certificates">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/440/845/original/certificate-vector.jpg"
+                            alt="Certificate 8">
+                    </a>
+                    <p class="certificate-description">
+                        Certificate 6 Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #2B67C7; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: opacity 0.3s;"><i
+            class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
